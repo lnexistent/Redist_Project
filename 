@@ -1,0 +1,27 @@
+[33mcommit 165862e036ff3915aba9614558e70e3bbb17b1b4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Alessandro La Veglia <a.laveglia@itsrizzoli.it>
+Date:   Thu Jun 29 11:26:13 2023 +0200
+
+    Add the Requirements to the file README.txt
+
+[33mcommit 820f6cb11b9ed60412b7683bec10c941a3711497[m
+Author: Alessandro La Veglia <a.laveglia@itsrizzoli.it>
+Date:   Thu Jun 29 11:08:13 2023 +0200
+
+    Renamed the file Main_Redis as Redis
+
+[33mcommit 76fd5a2e1da7a7d4e2be0cdb6fee4c2268fb7790[m
+Author: Mattia Barbazza <m.barbazza@itsrizzoli.it>
+Date:   Thu Jun 29 10:57:42 2023 +0200
+
+    Start of the Project
+    
+    Added the Main;
+    Added the connection to the DB and started to set up the credentials in the correct away;
+    added base README
+
+[33mcommit c316a5ffebcb31400c08b6cd8f59dab3e7cb19be[m
+Author: lnexistent <124784432+lnexistent@users.noreply.github.com>
+Date:   Thu Jun 29 10:21:24 2023 +0200
+
+    Initial commit

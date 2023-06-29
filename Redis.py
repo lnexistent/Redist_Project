@@ -24,3 +24,22 @@ try:
 except redis.ConnectionError:
     print("Failed to connect to Redis!")
     sys.exit(1)
+
+
+def get_ideas(redis_conn):
+    # Retrieve the list of ideas from the database
+    ideas = redis_conn.hgetall('ideas')
+    idea_dict = {}
+
+    for idea, votes in ideas.items():
+        idea_name = idea.decode()
+        votes_count = int(votes.decode())
+        idea_dict[idea_name] = []
+
+        # Retrieve the names of people who made the idea
+        names_key = f'idea_names:{idea_name}'
+        names = redis_conn.smembers(names_key)
+        for name in names:
+            idea_dict[idea_name].append(name.decode())
+
+    return idea_dict
